@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contenedor = document.getElementById("contenedor-productos");
   const finalizarBtn = document.getElementById('finalizar-btn');
 
-  // Renderizar productos
+
   products.forEach(producto => {
     const card = document.createElement('div');
     card.className = "bg-white p-4 rounded shadow flex flex-col justify-between";
@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     contenedor.appendChild(card);
   });
 
-  // Botón de finalizar compra
   if (finalizarBtn) {
     finalizarBtn.addEventListener('click', finalizarCompra);
   }
